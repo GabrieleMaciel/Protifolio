@@ -1,0 +1,12 @@
+body{
+    background-image: linear-gradient(rgb(157, 127, 223), black);
+    background-attachment: fixed;
+}
+.q1{
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(9, 12, 26);
+    width: 600px;
+    height: 400px;
+}

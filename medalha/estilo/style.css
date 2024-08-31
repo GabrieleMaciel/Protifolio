@@ -1,0 +1,23 @@
+@charset "UTP-8"
+body{
+    background-image: url(/medalha/imagem/fundo.jpg);
+}
+table{
+    background-color: rgba(248, 152, 74, 0.257);
+    text-align: center;  
+}
+th{
+    background-color: rgb(97, 50, 205);
+}
+tbody > tr:nth-child(even){
+    background-color: rgba(255, 255, 255, 0.502);
+    color: black;
+}
+tbody > tr:nth-child(odd){
+    background-color: rgba(0, 0, 0, 0.502);
+    color: white;
+}
+td{
+    text-align: center;
+
+}
