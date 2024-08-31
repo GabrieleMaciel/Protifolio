@@ -1,23 +1,40 @@
-@charset "UTP-8"
-body{
+@charset "UTP-8";
+header{
+    margin: 0%;
+    padding: 2px;
+    background-color: dimgray;
+    color: lightgreen;
+    text-align: center;
+}
+div{ 
     background-image: url(/medalha/imagem/fundo.jpg);
+    display:grid; 
+    place-items: center; 
+    border: 0px;
 }
 table{
-    background-color: rgba(248, 152, 74, 0.257);
+    width: 700px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    box-shadow:  1px 1px 1px rgba(43, 44, 43, 0.405);
     text-align: center;  
+
 }
 th{
-    background-color: rgb(97, 50, 205);
+    background-color: dimgray;
+    color: lightgreen;
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
 }
 tbody > tr:nth-child(even){
-    background-color: rgba(255, 255, 255, 0.502);
+    background-color: lightgrey;
     color: black;
 }
 tbody > tr:nth-child(odd){
-    background-color: rgba(0, 0, 0, 0.502);
-    color: white;
+    background-color: white(0, 0, 0, 0.502);
+    color: black;
 }
-td{
-    text-align: center;
 
 }
