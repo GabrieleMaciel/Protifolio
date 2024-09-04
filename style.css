@@ -5,9 +5,10 @@ body {
     font-family: Arial, sans-serif;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header {
@@ -15,7 +16,7 @@ header {
     margin-bottom: 20px;
 }
 
-.q1 {
+.project {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,9 +29,27 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 600px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
-.q1 a {
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project a {
     color: #f0a500;
     text-decoration: none;
     font-weight: bold;
@@ -38,7 +57,13 @@ header {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.q1 a:hover {
+.project a:hover {
     color: #ffdd57;
     transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
 }
