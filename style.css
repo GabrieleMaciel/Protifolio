@@ -24,7 +24,7 @@ header {
     color: white;
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(9, 12, 26);
+    background-color: rgba(9, 12, 26, 0.535);
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     width: 100%;
@@ -38,7 +38,7 @@ header {
 }
 
 .project img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -46,7 +46,7 @@ header {
 }
 
 .project img:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 .project a {
@@ -59,7 +59,7 @@ header {
 
 .project a:hover {
     color: #ffdd57;
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
 
 footer {
