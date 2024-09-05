@@ -1,0 +1,53 @@
+@charset "UTP-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(1, 75, 136);
+    color: rgb(1, 75, 136);
+}
+header{
+    padding: 20px;
+    background-color: rgb(95, 179, 67);
+    color: white;  
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-radius: 10px;
+    
+}
+main h2{
+    background-color: rgb(253, 185, 19) ;
+    color:rgb(1, 75, 136);
+    
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+figure {
+    margin: 0;
+    text-align: center; /* Centraliza a descrição abaixo da imagem */
+}
+
+img {
+    width: 200px; /* Ajusta o tamanho das imagens */
+    height: auto;
+}
+
+figcaption {
+    font-size: 14px;
+}
