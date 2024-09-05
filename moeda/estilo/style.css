@@ -1,53 +1,82 @@
 @charset "UTP-8";
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&=swap');
+:root{
+    --azul:rgb(1, 75, 136);
+    --verde:rgb(95, 179, 67);
+    --amarelo: rgb(253, 185, 19);
+    --cinza: rgb(199, 201, 200);
+  
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Azeret Mono', cursive;
+}
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body{
-    margin: 0px;
+    background-color: var(--cinza);
+    color: var(--azul);
+    font-family: var(--fonte-padrao);
+    font-size: 20px;
     text-align: center;
-    background-color: rgb(1, 75, 136);
-    color: rgb(1, 75, 136);
 }
 header{
     padding: 20px;
-    background-color: rgb(95, 179, 67);
-    color: white;  
+    background-color: var(--azul);
+    color: var(--cinza);  
 }
 main{
-    min-width: 300px;
     max-width: 1000px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding: 5px;
+    margin: 20px auto;
+    padding: 20px;
     background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     
 }
 main h2{
-    background-color: rgb(253, 185, 19) ;
-    color:rgb(1, 75, 136);
+    background-image: linear-gradient(to right, var(--verde), var(--amarelo));
+    margin-top: 10px;
+    color:var(--azul);
+    font-family: var(--fonte-destaque);
+    
     
 }
 .image-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
 
 }
 
 figure {
-    margin: 0;
-    text-align: center; /* Centraliza a descrição abaixo da imagem */
+    margin: 10px;
 }
 
 img {
-    width: 200px; /* Ajusta o tamanho das imagens */
+    width: 200px;
     height: auto;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
 }
 
 figcaption {
-    font-size: 14px;
+    font-size: 20px;
+}
+footer {
+    padding: 10px;
+    background-color: var(--azul);
+    color: var(--cinza); 
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
