@@ -90,16 +90,11 @@ table {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 } 
 
-th, td {
+td {
     padding: 5px;
-    border: 1px solid #ddd;
+    border: 2px solid var(--verde);
     text-align: center;
-} 
-
-th {
-    background-color: var(--verde);
-    color: var(--azul);
-}                                                                                                                                                                                                                                                      
+}                                                                                                            
 footer {
     padding: 10px;
     background-color: var(--azul);
