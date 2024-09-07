@@ -19,10 +19,14 @@ h1 {
     margin: 0;
     font-size: 2em;
 } 
+a{
+    color: lightgreen;
+    text-decoration:none;
+}
 
 table {
-    width: 100%
-    max-width: 700px;
+    width: 90%;
+    max-width:1200px;
     margin: 0 auto 20px;
     border-collapse: collapse;
     background-color: rgba(255, 255, 255, 0.727);
@@ -79,5 +83,5 @@ footer > a {
 }
 footer a:hover {
     text-decoration: underline;
-    color: lightgreen;
+    color: rgb(250, 34, 18);
 }
